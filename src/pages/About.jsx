@@ -1,5 +1,7 @@
 import { Link } from '../Link'
 
+console.log('About.jsx')
+
 export default function AboutPage () {
   return (
     <>
