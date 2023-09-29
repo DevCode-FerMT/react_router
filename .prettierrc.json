@@ -1,9 +1,9 @@
 {
-  "spaceBeforeFunctionParen": true,
   "arrowParens": "always",
   "semi": false,
   "singleQuote": true,
   "jsxSingleQuote": true,
-  "trailingComma": "all",
-  "printWidth": 220
+  "trailingComma": "none",
+  "printWidth": 220,
+  "singleAttributePerLine": true
 }
