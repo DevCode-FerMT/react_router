@@ -1,12 +1,17 @@
 import { Link } from '../Link'
+import { i18n } from '../../utils/const'
 
-console.log('About.jsx')
+const useI18n = (lang) => {
+  return i18n[lang] || i18n.es
+}
 
-export default function AboutPage () {
+export default function AboutPage ({ routeParams }) {
+  const i18n = useI18n(routeParams.lang ?? 'en')
+
   return (
     <>
-      <h1>About</h1>
-      <Link to='/'>Home</Link>
+      <h1>{i18n.title}</h1>
+      <Link to='/'>{i18n.link}</Link>
     </>
   )
 }
