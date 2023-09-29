@@ -20,5 +20,12 @@ export function Link ({ target, to, ...props }) {
     }
   }
 
-  return <a onClick={handleClick} href={to} target={target} {...props} />
+  return (
+    <a
+      onClick={handleClick}
+      href={to}
+      target={target}
+      {...props}
+    />
+  )
 }
