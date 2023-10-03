@@ -1,6 +1,6 @@
-import { Router } from './Router'
-import { ROUTES } from '../utils/const'
-import { Route } from './Route'
+import { Router } from './components/Router'
+import { ROUTES } from './utils/const'
+import { Route } from './components/Route'
 import { Suspense, lazy } from 'react'
 
 const lazyHomePage = lazy(() => import('./pages/Home.jsx'))

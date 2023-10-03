@@ -1,5 +1,5 @@
-import { Link } from '../Link'
-import { i18n } from '../../utils/const'
+import { Link } from '../components/Link'
+import { i18n } from '../utils/const'
 
 const useI18n = (lang) => {
   return i18n[lang] || i18n.es

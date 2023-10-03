@@ -1,7 +1,7 @@
 import { EVENTS } from '../utils/const'
 import { useState, useEffect, Children } from 'react'
 import { match } from 'path-to-regexp'
-import { getCurrentPath } from './utils'
+import { getCurrentPath } from '../utils/getCurrentPath'
 
 export function Router ({ children, routes = [], defaultComponent: DefaultComponent = () => <h1>404</h1> }) {
   const [currentPath, setCurrentPath] = useState(getCurrentPath())

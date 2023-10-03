@@ -1,5 +1,5 @@
-import SearchPage from '../src/pages/Search'
-import AboutPage from '../src/pages/About'
+import SearchPage from '../pages/Search'
+import AboutPage from '../pages/About'
 
 export const EVENTS = {
   PUSHSTATE: 'pushstate',
