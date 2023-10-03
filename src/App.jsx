@@ -13,7 +13,7 @@ function App () {
       <Suspense fallback={<div>Loading...</div>}>
         <Router
           routes={ROUTES}
-          DefaultComponent={lazyPage404}
+          defaultComponent={lazyPage404}
         >
           <Route
             path='/'

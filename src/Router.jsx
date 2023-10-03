@@ -3,7 +3,7 @@ import { useState, useEffect, Children } from 'react'
 import { match } from 'path-to-regexp'
 import { getCurrentPath } from './utils'
 
-export function Router ({ children, routes = [], DefaultComponent = () => <h1>404</h1> }) {
+export function Router ({ children, routes = [], defaultComponent: DefaultComponent = () => <h1>404</h1> }) {
   const [currentPath, setCurrentPath] = useState(getCurrentPath())
 
   useEffect(() => {
